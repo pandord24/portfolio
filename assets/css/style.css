@@ -1,97 +1,142 @@
 
-:root {
-    --content: #1816c2;
-    
-  }
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+address {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+section>h2 {
+  flex-basis: 20%;
+  text-align: right;
+  padding-right: 20px;
+  border-right: 3px solid black;
+  font-size: 36px;
+}
+
+section>div {
+  flex-basis: 80%;
+  padding-left: 10px;
+}
+
+main {
+  max-width: 88%;
+  margin: 0 auto;
+}
+
+header img {
+  width: auto;
+  height: 200px;
+}
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1%;
-    background-color: #13293d;
-    color: #fff;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1%;
+  background-color: #13293d;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container a {
+  /* border: 3px solid black; */
+  height: 180px;
+  margin: 0.5em;
+  font-size: 0.9rem;
+  flex-basis: calc(50% - 1em);
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  text-decoration: none;
+}
+
+.container a div {
+  padding: 8px 10px;
+  background-color: white;
+  color: black;
+}
+
+.container a:first-child {
+  flex-basis: 100%;
+  min-height: 320px;
+}
+
+.horiseon {
+  background-image: url(https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  min-width: 300px;
+}
+
+nav a {
+  color: #b9C6ae;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #fff;
+}
+
+main {
+  width: 96%;
+  margin: 2rem auto;
+}
 
 
 
-  nav ul {
-    display: flex;
-    justify-content: space-between;
-    min-width: 300px;
-  }
+.justify-center {
+  justify-content: center;
+}
 
-  nav a {
-    color: #b9C6ae;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  nav a:hover {
-    color: #fff;
-  }
-  
-  main {
-    width: 96%;
-    margin: 2rem auto;
-  }
-
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-left: -1.5rem;
-    margin-right: -1.5rem;
-  }
-  
-  .justify-center {
-    justify-content: center;
-  }
-  .card-column {
-    flex: 1 0 100%;
-    padding: 1.5rem;
-    transition: flex-basis 500ms linear;
-    margin-bottom: 1.5rem;
-  }
+.card-column {
+  flex: 1 0 100%;
+  padding: 1.5rem;
+  transition: flex-basis 500ms linear;
+  margin-bottom: 1.5rem;
+}
 
 @media screen and (min-width: 768px) {
-    .card-column {
-      flex: 0 0 50%;
-      max-width: 50%;
-    }
-  
-    .card-column:last-child {
-      flex-grow: 1;
-    }
+  .section {
+    flex: 0 0 50%;
+    max-width: 50%;
   }
-  
-  @media screen and (min-width: 992px) {
-    
-  
-    .card-column {
-      flex: 0 0 33.333%;
-      max-width: 33.333%;
-    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+
+  .section {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
   }
-  .code-card pre {
-    white-space: pre-wrap;
-    overflow: auto;
-    tab-size: 4;
-    padding: 1.2rem 1rem;
-    color: var(--content);
-    border-radius: 8px;
-    background-image: linear-gradient(
-      rgba(232, 102, 236, 0.3) 0%,
-      rgba(211, 236, 102, 0.6) 100%
-    );
-    display: flex;
-    align-items: center;
-  }
-  
-  footer {
-    display: flex;
-    justify-content: center;
-    padding: 2%;
-    background-color: #13293d;
-    color: #fff;
-  }
+}
+
+
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 2%;
+  background-color: #13293d;
+  color: #fff;
+}
